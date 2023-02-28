@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Typing Test</title>
+  </head>
+  <body>
+    <div class="waviy">
+      <span style="--i: 1">T</span>
+      <span style="--i: 2">Y</span>
+      <span style="--i: 3">P</span>
+      <span style="--i: 4">I</span>
+      <span style="--i: 5">N</span>
+      <span style="--i: 6">G</span>
+      <span style="--i: 6"> </span>
+      <span style="--i: 7">T</span>
+      <span style="--i: 8">E</span>
+      <span style="--i: 9">S</span>
+      <span style="--i: 10">T</span>
+    </div>
+    <div class="keyboard">
+      <div class="keyboard-row">
+        <div class="key">Q</div>
+        <div class="key">W</div>
+        <div class="key">E</div>
+        <div class="key">R</div>
+        <div class="key">T</div>
+        <div class="key">Y</div>
+        <div class="key">U</div>
+        <div class="key">I</div>
+        <div class="key">O</div>
+        <div class="key">P</div>
+      </div>
+      <div class="keyboard-row">
+        <div class="key">A</div>
+        <div class="key">S</div>
+        <div class="key">D</div>
+        <div class="key">F</div>
+        <div class="key">G</div>
+        <div class="key">H</div>
+        <div class="key">J</div>
+        <div class="key">K</div>
+        <div class="key">L</div>
+      </div>
+      <div class="keyboard-row">
+        <div class="key">Z</div>
+        <div class="key">X</div>
+        <div class="key">C</div>
+        <div class="key">V</div>
+        <div class="key">B</div>
+        <div class="key">N</div>
+        <div class="key">M</div>
+      </div>
+      <div class="keyboard-row">
+        <div class="key space"> </div>
+      </div>
+    </div>
+    <div class="test-result">
+      <div class="stats">
+        <p>Time: <span id="timer">0s</span></p>
+        <p>|</p>
+        <p>Mistakes:<span id="mistakes">0</span></p>
+      </div>
+      <div
+        id="quote"
+        onmousedown="return false"
+        onselectstart="return false"      
+      ></div>
+      <textarea
+        name=""
+        id="quote-input"
+        rows="3"
+        placeholder="Type here when test starts..."
+      ></textarea>
+      <div class="button">
+        <button id="start-test" onclick="startTest()">Start Test</button>
+      <button id="stop-test" onclick="displayResult()">Stop Test</button>
+      </div>
+      <div class="result">
+        <h3>Result</h3>
+        <div class="wrapper">
+          <p>Accuracy: <span id="accuracy"></span></p>
+          <p> | </p>
+          <p>Speed: <span id="wpm"></span></p>
+        </div>
+        <button id="test-again" onClick="window.location.reload();">Test Again</button>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript" src="futures.js"></script>
+</html>

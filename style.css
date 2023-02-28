@@ -1,0 +1,132 @@
+*s{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+/* style for text ani */
+.waviy {
+    position: relative;
+    text-align: center;
+    margin-bottom: 10px;
+    -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0,.2));
+    font-size: 30px;
+  }
+  .waviy span {
+    position: relative;
+    display: inline-block;
+    color: #fff;
+    text-transform: uppercase;
+    animation: waviy 1.5s infinite;
+    animation-delay: calc(.1s * var(--i));
+    
+  }
+  @keyframes waviy {
+    0%,40%,100% {
+      transform: translateY(0)
+    }
+    20% {
+      transform: translateY(-10px)
+    }
+  }
+  
+/* style for key board */
+.keyboard{
+  margin: 20px 0;
+}
+.keyboard-row{
+    width: 100%;
+    transition: all 0.3s;
+    font-weight: bold;
+}
+.keyboard-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.keyboard-row .key{
+    font-size: 2em;
+    padding: 8px 12px;
+    margin: 2px;
+    border: 1px solid #333;
+    border-radius: 5px;
+}
+.space{
+    width: 20%;
+    height: 20px;  
+    text-align: center;
+}
+.active{
+    background-color: red;
+}
+/* style for input and result */
+.test-result{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.stats{
+display: flex;
+}
+.stats p{
+  margin: 0;
+  margin-right: 10px;
+}
+#quote{
+  font-size: 26px;
+  margin: 20px;
+}
+textarea{
+  width: 50%;
+  resize: none;
+  border-radius: 5px;
+  font-size: 26px;
+  margin: 10px 0;
+}
+.button{
+  margin: 5px;
+}
+.button button{
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#start-test{
+  background-color: #44b267;
+}
+#stop-test{
+  background-color: #e81c4e;
+}
+#test-again{
+  display: flex;
+  background-color: dodgerblue;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  margin: auto;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.result{
+  display: none;
+}
+.result h3{
+ margin: 0;
+ text-align: center;
+}
+.wrapper{
+  display: flex;
+}
+.wrapper p {
+  margin: 0;
+  padding: 0px 20px;
+}
+/* style for success or fail */
+.success{
+  color: #44b267;
+}
+.fail{
+  color: #e81c4e;
+}
